@@ -1,6 +1,6 @@
 *.csx
 *.txt
-*.bat
+runscript.bat
 CookieReader/.vs
 CookieReader/bin
 CookieReader/obj
