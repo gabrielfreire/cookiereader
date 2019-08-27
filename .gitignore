@@ -1,0 +1,6 @@
+*.csx
+*.txt
+*.bat
+CookieReader/.vs
+CookieReader/bin
+CookieReader/obj
