@@ -30,9 +30,18 @@ Options:
 ```
 
 ## Read your cookies
+1. Will read cookies and output the cookies that contain 'google' in it's values
+2. Output the result to output.txt
 ```bash
 $ cookiereader read -f google -o output.txt
-# 1. Will read cookies and output the cookies that contain 'google' in it's values
-# 2. Output the result to output.txt
+Cookies File found at C:\Users\gabriel.freire\AppData\Local\Google\Chrome\User Data\Default\Cookies
+Connecting...
+Executing command...
+Processing... please wait!
+Cookie-Name: G_ENABLED_IDPS, Cookie-Value: google
+
+Cookie-Name: referrer, Cookie-Value: https://www.google.com/
+
+....
 ```
 
