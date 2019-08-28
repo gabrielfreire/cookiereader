@@ -19,10 +19,10 @@ namespace CookieReader
             File.WriteAllText(outputFile, data);
         }
 
-        protected void OutputToConsole(string data)
+        protected void OutputToConsole(string data, ConsoleColor color = ConsoleColor.White)
         {
             _console.BackgroundColor = ConsoleColor.Black;
-            _console.ForegroundColor = ConsoleColor.White;
+            _console.ForegroundColor = color;
             _console.Out.Write(data);
             _console.ResetColor();
         }

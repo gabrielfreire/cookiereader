@@ -50,12 +50,12 @@ namespace CookieReader.Commands
                 var willOutputToFile = await ShouldOutputToFile();
                 if (willOutputToFile)
                 {
-                    OutputToConsole($"Saving to {OutputFile}\r\n");
+                    OutputToConsole($"Saving to {OutputFile}\r\n", color: ConsoleColor.Blue);
                     OutputToFile(OutputFile, val);
                 }
                 else
                 {
-                    OutputToConsole(val);
+                    OutputToConsole(val, color: ConsoleColor.Cyan);
                 }
 
                 return 0;
@@ -87,7 +87,7 @@ namespace CookieReader.Commands
                         OutputToConsole($"Executing command...\r\n");
                         using (var reader = cmd.ExecuteReader())
                         {
-                            OutputToConsole($"Processing... please wait!\r\n");
+                            OutputToConsole($"Processing... please wait!\r\n", color: ConsoleColor.Green);
                             while (reader.Read())
                             {
                                 var encryptedData = (byte[])reader[1];
